@@ -1,5 +1,15 @@
-import time, subprocess, ctypes, random, string, re, sys, TwitchPlays_Connection, pyautogui, pydirectinput, pynput
+import time
+import subprocess
+import ctypes
+import random
+import string
+import re
+import sys
+import TwitchPlays_Connection
 from TwitchPlays_AccountInfo import TWITCH_USERNAME, TWITCH_OAUTH_TOKEN
+import pyautogui
+import pydirectinput
+import pynput
 from pynput.mouse import Button, Controller
 SendInput = ctypes.windll.user32.SendInput
 def PressKeyPynput(hexKeyCode):
@@ -143,29 +153,29 @@ while True:
                     time.sleep(0.1)
                     ReleaseKeyPynput(W)
                     ReleaseKeyPynput(D)
-                if msg in ['light up', 'soft up', 'mini up', 'mini u', 'soft u', 'light u']:
+                if msg in ['light up', 'soft up', 'mini up', 'mini u', 'soft u', 'light u', 'soft forward', 'light forward', 'mini forward', ]:
                     PressKeyPynput(W)
                     time.sleep(0.3)
                     ReleaseKeyPynput(W)
-                if msg in ['light up left', 'soft up left', 'mini up left', 'mini ul', 'soft ul', 'light left up', 'soft left up', 'mini left up', 'light lu', 'soft lu', 'mini lu', 'light ul']:
+                if msg in ['light up left', 'soft up left', 'mini up left', 'mini ul', 'soft ul', 'light left up', 'soft left up', 'mini left up', 'light lu', 'soft lu', 'mini lu', 'light ul', 'soft back left', 'light back left']:
                     PressKeyPynput(W)
                     PressKeyPynput(A)
                     time.sleep(0.3)
                     ReleaseKeyPynput(W)
                     ReleaseKeyPynput(A)
-                if msg in ['light down left', 'soft down left', 'mini down left', 'mini dl', 'soft dl', 'light left down', 'soft left down', 'mini left down', 'light ld', 'soft ld', 'mini ld', 'light dl']:
+                if msg in ['light down left', 'soft down left', 'mini down left', 'mini dl', 'soft dl', 'light left down', 'soft left down', 'mini left down', 'light ld', 'soft ld', 'mini ld', 'light dl', 'soft left back', 'light left back']:
                     PressKeyPynput(S)
                     PressKeyPynput(A)
                     time.sleep(0.3)
                     ReleaseKeyPynput(A)
                     ReleaseKeyPynput(S)
-                if msg in ['light down right', 'soft down right', 'mini down right', 'mini dr', 'soft dr', 'light right down', 'soft right down', 'mini right down', 'light rd', 'soft rd', 'mini rd', 'light dr']:
+                if msg in ['light down right', 'soft down right', 'mini down right', 'mini dr', 'soft dr', 'light right down', 'soft right down', 'mini right down', 'light rd', 'soft rd', 'mini rd', 'light dr', 'soft back right', 'light back right']:
                     PressKeyPynput(S)
                     PressKeyPynput(D)
                     time.sleep(0.3)
                     ReleaseKeyPynput(S)
                     ReleaseKeyPynput(D)
-                if msg in ['light up right', 'soft up right', 'mini up right', 'mini ur', 'soft ur', 'light right up', 'soft right up', 'mini right up', 'light ru', 'soft ru', 'mini ru', 'light ur']:
+                if msg in ['light up right', 'soft up right', 'mini up right', 'mini ur', 'soft ur', 'light right up', 'soft right up', 'mini right up', 'light ru', 'soft ru', 'mini ru', 'light ur', 'light forward right', 'soft forward right']:
                     PressKeyPynput(W)
                     PressKeyPynput(D)
                     time.sleep(0.3)
@@ -295,7 +305,7 @@ while True:
                     time.sleep(1.0)
                     ReleaseKeyPynput(D)
                     ReleaseKeyPynput(S)
-                if msg in ['hu', 'hold up', 'hold forward', 'long up', 'long forward', 'long l', 'hold u']:
+                if msg in ['hu', 'hold up', 'hold forward', 'long up', 'long forward', 'long u', 'hold u']:
                     PressKeyPynput(W)
                     time.sleep(3.0)
                     ReleaseKeyPynput(W)                 
@@ -446,17 +456,17 @@ while True:
                     PressKeyPynput(S)
                     time.sleep(0.1)
                     ReleaseKeyPynput(L)
-                    time.sleep(0.08)
+                    time.sleep(0.082)
                     timer=0
                     while timer<=40:
                         timer+=1
-                        PressAndHoldKey(L, 0.01854)
-                        time.sleep(0.01874)
+                        PressAndHoldKey(L, 0.019)
+                        time.sleep(0.020)
                     timer=0  
                     while timer<=210:
                         timer+=1
-                        PressAndHoldKey(L, 0.0109) 
-                        time.sleep(0.0084)
+                        PressAndHoldKey(L, 0.011) 
+                        time.sleep(0.001)
                     ReleaseKeyPynput(K)
                     ReleaseKeyPynput(S)                     
                 if msg in ['bljx250 left', 'backwards longjump x250 left', 'backwards long jump x250 left', 'x250 backwards longjump left', 'x250 backwards long jump left', 'blj x250 left', 'blj x 250 left', 'bljx250 left', 'blj x 250 left', 'blj x250 left']:
@@ -470,17 +480,17 @@ while True:
                     PressKeyPynput(D)
                     time.sleep(0.1)
                     ReleaseKeyPynput(L)
-                    time.sleep(0.08)
+                    time.sleep(0.082)
                     timer=0
                     while timer<=40:
                         timer+=1
-                        PressAndHoldKey(L, 0.01854)
-                        time.sleep(0.01874)
+                        PressAndHoldKey(L, 0.019)
+                        time.sleep(0.020)
                     timer=0  
                     while timer<=210:
                         timer+=1
-                        PressAndHoldKey(L, 0.0109) 
-                        time.sleep(0.0084)
+                        PressAndHoldKey(L, 0.011) 
+                        time.sleep(0.001)
                     ReleaseKeyPynput(K)
                     ReleaseKeyPynput(D) 
                 if msg in ['bljx250 right', 'backwards longjump x250 right', 'backwards long jump x250 right', 'x250 backwards longjump right', 'x250 backwards long jump right', 'blj x250 right', 'blj x 250 right', 'bljx250 right', 'blj x 250 right', 'blj x250 right']:
@@ -494,17 +504,17 @@ while True:
                     PressKeyPynput(A)
                     time.sleep(0.1)
                     ReleaseKeyPynput(L)
-                    time.sleep(0.08)
+                    time.sleep(0.082)
                     timer=0
                     while timer<=40:
                         timer+=1
-                        PressAndHoldKey(L, 0.01854)
-                        time.sleep(0.01874)
+                        PressAndHoldKey(L, 0.019)
+                        time.sleep(0.020)
                     timer=0  
                     while timer<=210:
                         timer+=1
-                        PressAndHoldKey(L, 0.0109) 
-                        time.sleep(0.0084)
+                        PressAndHoldKey(L, 0.011) 
+                        time.sleep(0.001)
                     ReleaseKeyPynput(K)
                     ReleaseKeyPynput(A)  
                 if msg in ['bljx250 down', 'backwards longjump x250 down', 'backwards long jump x250 down', 'x250 backwards longjump down', 'x250 backwards long jump down', 'blj x250 down', 'blj x 250 down', 'bljx250 down', 'blj x 250 down', 'blj x250 down']:
@@ -518,17 +528,17 @@ while True:
                     PressKeyPynput(W)
                     time.sleep(0.1)
                     ReleaseKeyPynput(L)
-                    time.sleep(0.08)
+                    time.sleep(0.082)
                     timer=0
                     while timer<=40:
                         timer+=1
-                        PressAndHoldKey(L, 0.01854)
-                        time.sleep(0.01874)
+                        PressAndHoldKey(L, 0.019)
+                        time.sleep(0.020)
                     timer=0  
                     while timer<=210:
                         timer+=1
-                        PressAndHoldKey(L, 0.0109) 
-                        time.sleep(0.0084)                 
+                        PressAndHoldKey(L, 0.011) 
+                        time.sleep(0.01)                 
                     ReleaseKeyPynput(K)
                     ReleaseKeyPynput(W)                                                      
                 if msg in ['hold forward forever', 'run forever up', 'hold up forever', 'up forever',  'run up forever', 'u forever']:
@@ -746,47 +756,55 @@ while True:
                     ReleaseKeyPynput(L)                
                 if msg in ['double jump', 'doublejump', 'aa', 'a a']:
                     jumpp=0
-                    while jumpp<=5:
+                    PressAndHoldKey(L,0.1)
+                    time.sleep(0.44)
+                    while jumpp<=3:
                         jumpp+=1
-                        PressAndHoldKey(L,0.1)
-                        time.sleep(0.2)           
+                        PressAndHoldKey(L,0.3)
+                        time.sleep(0.01)           
                 if msg in ['double jump forward', 'doublejump forward', 'double jump up', 'doublejump up', 'up double jump', 'up doublejump', 'forward double jump', 'forward doublejump', 'doublejump u', 'double jump u', 'u double jump', 'u doublejump']:
                     PressKeyPynput(W)
-                    time.sleep(0.3)
-                    jumpp=0
-                    while jumpp<=5:
-                        jumpp+=1
-                        PressAndHoldKey(L,0.1)
-                        time.sleep(0.2)
+                    time.sleep(0.25)
                     PressAndHoldKey(L,0.1)
-                    time.sleep(0.2)
+                    time.sleep(0.44)                    
+                    jumpp=0
+                    while jumpp<=2:
+                        jumpp+=1
+                        PressAndHoldKey(L,0.4)
+                        time.sleep(0.003)
                     ReleaseKeyPynput(W)
                 if msg in ['double jump left', 'doublejump left', 'left double jump', 'left doublejump', 'doublejump l', 'double jump l', 'l doublejump', 'l double jump']:
                     PressKeyPynput(A)
-                    time.sleep(0.3)
+                    time.sleep(0.25)
+                    PressAndHoldKey(L,0.1)
+                    time.sleep(0.44)                    
                     jumpp=0
-                    while jumpp<=5:
+                    while jumpp<=2:
                         jumpp+=1
-                        PressAndHoldKey(L,0.1)
-                        time.sleep(0.2)
+                        PressAndHoldKey(L,0.4)
+                        time.sleep(0.003)
                     ReleaseKeyPynput(A)
                 if msg in ['double jump right', 'doublejump right', 'right double jump', 'right doublejump', 'doublejump r', 'double jump r', 'r double jump', 'r doublejump']:
                     PressKeyPynput(D)
-                    time.sleep(0.3)
+                    time.sleep(0.25)
+                    PressAndHoldKey(L,0.1)
+                    time.sleep(0.44)                    
                     jumpp=0
-                    while jumpp<=5:
-                        jump+=1
-                        PressAndHoldKey(L,0.1)
-                        time.sleep(0.2)
+                    while jumpp<=2:
+                        jumpp+=1
+                        PressAndHoldKey(L,0.4)
+                        time.sleep(0.003)
                     ReleaseKeyPynput(D)
                 if msg in ['double jump down', 'doublejump down', 'down double jump', 'down doublejump', 'double jump back', 'doublejump back', 'back double jump', 'back doublejump', 'doublejump d', 'double jump d', 'd doublejump', 'd double jump']:
                     PressKeyPynput(S)
-                    time.sleep(0.3)
-                    jumppp=0
-                    while jumpp<=5:
+                    time.sleep(0.25)
+                    PressAndHoldKey(L,0.1)
+                    time.sleep(0.44)                    
+                    jumpp=0
+                    while jumpp<=2:
                         jumpp+=1
-                        PressAndHoldKey(L,0.1)
-                        time.sleep(0.2)
+                        PressAndHoldKey(L,0.4)
+                        time.sleep(0.003)
                     ReleaseKeyPynput(S)
                 if msg in ['triple jump', 'triplejump', 'a a a', 'aaa']:
                     jumpp=0
