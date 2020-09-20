@@ -1,15 +1,5 @@
-import time
-import subprocess
-import ctypes
-import random
-import string
-import re
-import sys
-import TwitchPlays_Connection
+import time, subprocess, ctypes, random, string, re, sys, TwitchPlays_Connection, pyautogui, pydirectinput, pynput
 from TwitchPlays_AccountInfo import TWITCH_USERNAME, TWITCH_OAUTH_TOKEN
-import pyautogui
-import pydirectinput
-import pynput
 from pynput.mouse import Button, Controller
 SendInput = ctypes.windll.user32.SendInput
 def PressKeyPynput(hexKeyCode):
