@@ -29,10 +29,10 @@ Commands of the bot are posted here: https://justpaste.it/3923y
 
 # Run Script
 Running is preety easy. Let's say you fixed the controls to match just go to TwitchPlays_AccountInfo.py put you stream username and oauth from here http://twitchapps.com/tmi/
-Then run from a cmd/powershell 'python twitchplays.py' or if you got pypy type 'pypy3 twitchplays.py'. In case 'python twitchlays.py' doesnt work try 'python3'.
+Then run from a cmd/powershell 'python twitchplays.py' or if you got pypy type 'pypy3 twitchplays.py'. In case 'python twitchplays.py' doesnt work try 'python3', 'py', 'py3' or add variables cause they are missing.
 
-About forever thing. It's a script that reruns code in case of a crash. I think you need to npm install it, look here https://www.npmjs.com/package/forever
-If you type forever on cmd and it returns stuff you are good to go. bat should be self explained, the way it works is it runs and it hides, if you want to stop script check task manager for node.js process.
+About forever thing. It's a script that reruns the code in case of a crash. I think you need to npm install it, look here https://www.npmjs.com/package/forever
+If you type forever on cmd and it returns stuff you are good to go. The file .bat should be self explained, the way it works is it runs and it hides, if you want to stop script check task manager for a node.js process.
 
 # OBS Delay
 
