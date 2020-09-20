@@ -24,8 +24,8 @@ and done
 # Keys
 
 I have changes some keys like 'l' is jump and ',' is punch, 'b' is start.
-In order to open cheats menu in pc port put this at the end  '--skip-intro --cheats'.
-Commands are posted here: https://justpaste.it/3923y 
+In order to open cheats menu in pc port create a shortcut and put these at the end  '--skip-intro --cheats'.
+Commands of the bot are posted here: https://justpaste.it/3923y 
 
 # Run Script
 Running is preety easy. Let's say you fixed the controls to match just go to TwitchPlays_AccountInfo.py put you stream username and oauth from here http://twitchapps.com/tmi/
